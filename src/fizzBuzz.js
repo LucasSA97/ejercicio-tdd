@@ -8,7 +8,9 @@ export const fizzBuzz = (number) => {
   const multiples = { 3: "fizz", 5: "buzz" };
   let output = "";
 
-  Object.entries(multiples).forEach(([multipler, word]) => {
+  Object
+    .entries(multiples)
+    .forEach(([multipler, word]) => {
     if (number % multipler === 0) output += word;
   });
 
